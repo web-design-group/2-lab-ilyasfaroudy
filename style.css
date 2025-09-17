@@ -1,0 +1,125 @@
+body {
+    background-color: #0a0a0a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 2.8em;
+    color: #d4af37;
+    text-align: center;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #b91c1c;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+
+.highlight {
+    background-color: rgba(128, 0, 32, 0.4);
+    border-left: 6px solid #d4af37;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.posters {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; 
+    margin: 20px 0;
+}
+
+
+.posters img {
+    max-width: 300px;
+    border: 3px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(212,175,55,0.5);
+    transition: transform 0.3s;
+}
+
+.posters img:hover {
+    transform: scale(1.05);
+}
+
+
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #800020;
+    color: #d4af37;
+}
+
+
+
+nav span.active {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+    cursor: default;
+}
+
+
+.card {
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.float-left {
+    float: left;
+    width: 220px;
+    margin: 10px 20px 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(212,175,55,0.4);
+}
+.clear {
+    clear: both;
+}
+
+footer {
+    background-color: #111;
+    color: #d4af37;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #800020;
+}
