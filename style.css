@@ -12,7 +12,6 @@ body {
     margin: 0 auto;
 }
 
-
 h1 {
     font-size: 2.8em;
     color: #d4af37;
@@ -33,7 +32,6 @@ p {
     padding: 5px;
 }
 
-
 .highlight {
     background-color: rgba(128, 0, 32, 0.4);
     border-left: 6px solid #d4af37;
@@ -42,29 +40,13 @@ p {
     border-radius: 5px;
 }
 
-
-.posters {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px; 
-    margin: 20px 0;
-}
-
-
-.posters img {
+#poster {
+    display: block;
+    margin: 20px auto;
     max-width: 300px;
-    border: 3px solid #d4af37;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(212,175,55,0.5);
-    transition: transform 0.3s;
 }
-
-.posters img:hover {
-    transform: scale(1.05);
-}
-
-
 
 nav {
     text-align: center;
@@ -87,14 +69,17 @@ nav a:hover {
     color: #d4af37;
 }
 
-
-
-nav span.active {
-    color: #d4af37;
-    border-bottom: 2px solid #d4af37;
-    cursor: default;
+.float-left {
+    float: left;
+    width: 220px;
+    margin: 10px 20px 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(212,175,55,0.4);
 }
 
+.clear {
+    clear: both;
+}
 
 .card {
     background-color: rgba(20, 20, 20, 0.8);
@@ -104,15 +89,31 @@ nav span.active {
     box-shadow: 0 0 15px rgba(0,0,0,0.6);
 }
 
-.float-left {
-    float: left;
-    width: 220px;
-    margin: 10px 20px 10px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(212,175,55,0.4);
+.posters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
 }
-.clear {
-    clear: both;
+
+.posters img {
+    width: 220px;
+    border: 3px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(212,175,55,0.5);
+    transition: transform 0.3s;
+}
+
+.posters img:hover {
+    transform: scale(1.05);
+}
+
+.centered-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 footer {
